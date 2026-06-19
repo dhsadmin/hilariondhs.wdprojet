@@ -1,0 +1,11 @@
+body {
+    background-color: #f8f9fa; /* Équivalent Bootstrap plus doux que #eee */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* On force une taille maximale fixe pour les deux logos de l'entête */
+.logo-header {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111;
+            color: #fff;
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .foot {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .foot h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .foot ul {
+            list-style: none;
+        }
+
+        .foot li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            color: #ccc;
+        }
+
+        .foot p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .links {
+            width: 20px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .foot iframe {
+            width: 100%;
+            height: 180px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Adaptation pour les téléphones */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .foot h2, .foot li {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <footer>
+        <div class="footer-container">
+            <div class="foot">
+                <h2>Comment nous contacter !</h2>
+                <ul>
+                    <li><img src="links/whatsapp.png" class="links" alt="Whatsapp"> +229 01 57 32 62 37</li>
+                    <li><img src="links/linkedin.png" class="links" alt="LinkedIn"> Hilarion Arnaud DANHOUSSO</li>
+                    <li><img src="links/fb.png" class="links" alt="Facebook"> HILA RION</li>
+                </ul>
+            </div>
+
+            <div class="foot">
+                <h2><img src="links/location.png" class="links" alt="Location"> Localisation</h2>
+                <p>République du Bénin <br>Cotonou, Gbégamey<br>RUE RR05 Camp Ghézo</p>
+            </div>
+
+            <div class="foot">
+                <iframe src="https://maps.google.com/maps?q=Gbegamey,Cotonou,Benin&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

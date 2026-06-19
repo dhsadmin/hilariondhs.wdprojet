@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les listes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="tpliste.css">
+</head>
+<body class="bg-light py-4">
+
+    <div class="container bg-white p-4 rounded shadow-sm">
+
+        <ul class="list-group mb-4"> 
+            <li class="list-group-item">Fraises</li> 
+            <li class="list-group-item">Framboises</li> 
+            <li class="list-group-item">Cerises</li> 
+        </ul> 
+
+        <ol class="list-group list-group-numbered mb-4"> 
+            <li class="list-group-item">Je me lève</li> 
+            <li class="list-group-item">Je mange et je bois</li> 
+            <li class="list-group-item">Je retourne me coucher</li> 
+        </ol> 
+
+        <dl class="row mb-4 bg-light p-3 rounded border"> 
+            <dt class="col-sm-3 text-primary">Chat</dt> 
+            <dd class="col-sm-9">Animal à 4 pattes qui fait "Miaou !"</dd> 
+            <dt class="col-sm-3 text-primary">Chien</dt> 
+            <dd class="col-sm-9">Animal à 4 pattes qui fait "Ouaf Ouaf !"</dd> 
+            <dt class="col-sm-3 text-danger">Prof de maths</dt> 
+            <dd class="col-sm-9">Personne qui enseigne des choses que personne ne comprend</dd> 
+        </dl> 
+
+        <p>Voici une liste avec retrait (par défaut) :</p> 
+        <ul class="retrait ps-4 mb-4"> 
+            <li>Liste<br />à puces</li> 
+            <li>Ligne 1<br />Ligne 2</li> 
+            <li>Vous pouvez voir<br />que le texte est décalé sur la droite</li> 
+        </ul> 
+
+        <p>Voici une liste sans retrait :</p> 
+        <ul class="pas_de_retrait list-unstyled ps-0 mb-4"> 
+            <li>Liste<br />à puces</li> 
+            <li>Ligne 1<br />Ligne     2</li> 
+            <li>Vous pouvez voir<br />que le texte n'est pas décalé sur la droite</li> 
+        </ul> 
+
+        <h2 class="h4 text-secondary mt-4 mb-3">Quelques listes non ordonnées</h2> 
+
+        <p>Avec <em>circle</em> :</p> 
+        <ul class="cercle ps-4 mb-3"> 
+            <li>Liste</li> 
+            <li>à</li> 
+            <li>puces</li> 
+        </ul> 
+
+        <p>Avec <em>square</em> :</p> 
+        <ul class="carre ps-4 mb-3"> 
+            <li>Liste</li> 
+            <li>à</li> 
+            <li>puces</li> 
+        </ul> 
+
+        <p>Avec <em>none</em> (sans puces) :</p> 
+        <ul class="rien list-unstyled ps-0 mb-4"> 
+            <li>Liste</li> 
+            <li>à</li> 
+            <li>puces</li> 
+        </ul> 
+
+        <h2 class="h4 text-secondary mt-4 mb-3">Quelques listes ordonnées</h2> 
+
+        <p>Avec <em>decimal-leading-zero</em> (<strong>Ne fonctionne pas sous IE)</strong>) :</p> 
+        <ol class="commence_a_zero ps-4 mb-3"> 
+            <li>Un</li> 
+            <li>Deux</li> 
+            <li>Trois</li> 
+            <li>Quatre</li> 
+        </ol> 
+
+        <p>Avec <em>lower-alpha</em> :</p> 
+        <ol class="lettres_minuscules ps-4 mb-3"> 
+            <li>Un</li> 
+            <li>Deux</li> 
+            <li>Trois</li> 
+            <li>Quatre</li> 
+        </ol> 
+
+        <p>Avec <em>upper-roman</em> :</p> 
+        <ol class="chiffres_romains ps-4 mb-3"> 
+            <li>Un</li> 
+            <li>Deux</li> 
+            <li>Trois</li> 
+            <li>Quatre</li> 
+        </ol> 
+
+        <p>Avec <em>lower-greek</em> (<strong>Ne fonctionne pas sous IE</strong>) :</p> 
+        <ol class="lettres_grecques ps-4 mb-3"> 
+            <li>Un</li> 
+            <li>Deux</li> 
+            <li>Trois</li> 
+            <li>Quatre</li> 
+        </ol> 
+
+    </div>
+
+</body>
+</html>
