@@ -1,11 +1,47 @@
 body {
-    background-color: #f8f9fa; /* Équivalent Bootstrap plus doux que #eee */
+    background-color: #f8f9fa;
     font-family: 'Montserrat', sans-serif;
 }
 
-/* On force une taille maximale fixe pour les deux logos de l'entête */
+/* Zone de marge pour éviter que le header fixe ne chevauche le contenu */
+.pt-5-custom {
+    padding-top: 130px;
+}
+
+/* Ajustement de la marge supérieure sur mobile car le header s'étend verticalement */
+@media (max-width: 767.98px) {
+    .pt-5-custom {
+        padding-top: 240px;
+    }
+}
+
+/* Arrière-plan dégradé linéaire géométrique et moderne */
+.glass-header {
+    background: linear-gradient(135deg, #0f0c20 0%, #0052d4 50%, #6e0dd0 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 2px solid #6e0dd0;
+}
+
+/* Couleur lumineuse pour ton prénom dans le header */
+.text-light-accent {
+    color: #00f2fe;
+    transition: color 0.2s ease-in-out;
+}
+
+.text-light-accent:hover {
+    color: #ffffff;
+}
+
+/* Style des logos de l'université et de l'école */
 .logo-header {
-    max-width: 100px;
+    max-width: 90px;
     width: 100%;
     height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo-header:hover {
+    transform: scale(1.05);
 }
